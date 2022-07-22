@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight Converter</title>
+  <link rel = "stylesheet" 
+  href="styles.css">
+  <link rel = "stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <div class = "container">
+      <div class = "container2">
+          <h1>
+            Weight Converter
+          </h1>
+          <form name="myForm">
+              <div class = "header">           
+                  <label class = "label" for= "kg"> KG</label>
+                  <input class = "inputs" name = "num" id="kg" type = "number" oninput="convert(this.value)" >
+              </div>    
+              <div class = "card card-primary mb-2">
+                <h4 >Grams</h4>
+                    <div class = "card-block">
+                      <div class = "gramsOutput">
+                        <p>Output: <span id = "outputGrams">checked</span></p>
+                      </div>
+                  </div>
+              </div>
+              <div class = "card card-primary mb-2">
+                    <h4>Oz</h4>
+                    <div class = "card-block">
+                      <div class = "gramsOutput">
+                        Output <span id = "outputOz"> yes</span>
+                      </div>
+                    </div>
+              </div>
+              <div class = "card card-primary mb-2">
+                <h4>lbs</h4>
+                <div class = "card-block">
+                  <div class = "gramsOutput">
+                    Output <span id = "outputLbs">check</span>
+                  </div>
+                </div>
+          </div>
+          </form>
+      </div>
+  </div>
+</head>
+<body class= "bodyCss" >
+  <div class="clock">
+    <p id="time">
+    </p>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>

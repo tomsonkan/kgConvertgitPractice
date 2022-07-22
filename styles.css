@@ -1,0 +1,33 @@
+.bodyCss{
+  background-color: rgb(155, 93, 82);
+  color: rgb(43, 14, 14);
+  border: 2px solid black;
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 10px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs {
+ margin: 10px 
+}
+
+.label{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  width: 50%;
+  background-color:rgb(43, 14, 14);
+  margin: auto;
+}
+
+.inputs{
+  margin: 0 auto;
+}

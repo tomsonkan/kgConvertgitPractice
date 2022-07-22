@@ -1,0 +1,40 @@
+//const { padStart } = require("lodash");
+
+ function convert(valNum) {
+
+    var z = document.forms["myForm"]["num"].value;
+    console.log("check: " + z)
+    if(/\D/.test(z)) {
+      alert("Enter number please!");
+      
+    } else {
+
+   document.getElementById("outputGrams").innerHTML = Math.round(valNum/ 0.0022046, 0);
+   console.log("check:" + valNum)
+   document.getElementById("outputOz").innerHTML = Math.round(valNum * 35.274, 0);
+   document.getElementById("outputLbs").innerHTML = Math.round(valNum * 2.20462, 0);
+  };
+
+ }
+
+const displayTime = () =>{
+  let date = new Date;
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  let second = date.getSeconds();
+  let amPm = '';
+
+  if(hour < 12) {
+    amPm = 'AM'
+  } else {
+    amPM = 'PM'
+  }
+
+  time.textContent = `${hour}:${minute} ${second}`;
+  requestAnimationFrame(displayTime);
+  
+}
+
+displayTime();
+
+ 
