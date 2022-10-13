@@ -1,20 +1,17 @@
 //const { padStart } = require("lodash");
 
  function convert(valNum) {
-
     var z = document.forms["myForm"]["num"].value;
     console.log("check: " + z)
     if(/\D/.test(z)) {
       alert("Enter number please!");
-      
-    } else {
-
-   document.getElementById("outputGrams").innerHTML = Math.round(valNum/ 0.0022046, 0);
-   console.log("check:" + valNum)
-   document.getElementById("outputOz").innerHTML = Math.round(valNum * 35.274, 0);
-   document.getElementById("outputLbs").innerHTML = Math.round(valNum * 2.20462, 0);
-  };
-
+      } else {
+        document.getElementById("outputGrams").innerHTML = Math.round(valNum/ 0.0022046, 0);
+        document.getElementById("outputGramsChild").innerHTML = Math.round(valNum/ 0.0022046, 0);
+        console.log("check:" + valNum)
+        document.getElementById("outputOz").innerHTML = Math.round(valNum * 35.274, 0);
+        document.getElementById("outputLbs").innerHTML = Math.round(valNum * 2.20462, 0);
+      };
  }
 
 const displayTime = () =>{
@@ -27,14 +24,21 @@ const displayTime = () =>{
   if(hour < 12) {
     amPm = 'AM'
   } else {
-    amPM = 'PM'
+    amPM = 'PM';
+    hour = hour - 12;
   }
 
-  time.textContent = `${hour}:${minute} ${second}`;
+  let padHour = String(hour).padStart(2,0)
+  let padMinute = String(minute).padStart(2,0)
+  let padSecond = String(second).padStart(2,0)
+  
+  time.textContent = `${hour}:${padMinute}:${padSecond} ${amPM}`;
   requestAnimationFrame(displayTime);
   
 }
 
 displayTime();
 
- 
+ function change() {
+  
+ }
