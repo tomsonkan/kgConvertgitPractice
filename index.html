@@ -22,14 +22,14 @@
               <div class ="accordion">
                 <input type="checkbox" id="section1" class="accordion__input__hide accordion__input">
                     <label for="section1" class="accordion__label">Grams</label>
-                    <div class = "accordion__content gramsOutput">
-                        <p class="pFormat">Output: <span id = "outputGrams">checked</span></p>                    
-                        <input type="checkbox" id="section1Child" class="accordion__input__hideChild accordion__inputChild">
-                          <label for="section1Child" class="accordion__label">Grams</label>
-                            <div class = "accordion__contentChild gramsOutput">
-                              <p class="pFormat">Output: <span id = "outputGramsChild">checkedChild</span></p>                    
-                            </div>
-                    </div>
+                      <div class = "accordion__content gramsOutput">
+                          <p class="pFormat">Output: <span id = "outputGrams">checked</span></p>                    
+                            <input type="checkbox" id="section1Child" class="accordion__input__hideChild accordion__inputChild">
+                              <label for="section1Child" class="accordion__label">Grams</label>
+                                <div class = "accordion__contentChild gramsOutput">
+                                  <p class="pFormat">Output: <span id = "outputGramsChild">checkedChild</span></p>                    
+                                </div>
+                      </div>
                     <h4>Oz</h4>
                 <input type="checkbox" id="section2" class="accordion__input__hide accordion__input1">
                   <label for="section2" class="accordion__label">OZ</label>
@@ -46,8 +46,9 @@
           </form>
       </div>
 
-      <div class = "button" onclick="change">
-        <button class = "Load">Push Me</button>
+      <div class = "button">
+        <button class = "button1" id = "Load">Push Me</button>
+           <p id="out1">Output1?</p>
       </div>
     </div>
 </head>
@@ -57,6 +58,7 @@
       Check Me
     </p>
   </div>
+  <div id="cocktail">check</div>
   <script src="./app.js" defer></script>
 </body>
 </html>
