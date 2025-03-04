@@ -59,6 +59,10 @@ document.getElementById("Load").addEventListener('click', function(){
   document.getElementById("out1").innerHTML = name1.change()
 })
 
+document.getElementById("Load2").addEventListener('click', function(){
+  document.getElementById("out2").innerHTML = name2.change()
+})
+
 // function change(newPerson) {
 //   let array = [];
 
