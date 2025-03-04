@@ -53,9 +53,11 @@ constructor(firstName, lastName) {
 };
 
 var name1 = new Person("Tomson", "Kan")
+var name2 = new Person("Preston", "Kan")
 
 document.getElementById("Load").addEventListener('click', function(){
-  document.getElementById("out1").innerHTML = name1.change()})
+  document.getElementById("out1").innerHTML = name1.change()
+})
 
 // function change(newPerson) {
 //   let array = [];
